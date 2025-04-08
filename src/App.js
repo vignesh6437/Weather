@@ -76,7 +76,7 @@ const App = () => {
             case 'drizzle':
                 return 'https://images.unsplash.com/photo-1523531294911-8fc5c7a09e1f?auto=format&fit=crop&w=1950&q=80';
             case 'snow':
-                return 'https://images.unsplash.com/photo-1542224566-1ec523f2f550?auto=format&fit=crop&w=1950&q=80';
+                return 'https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/74C8/production/_132269892_sevenoaks.jpg';
             case 'mist':
             case 'haze':
             case 'fog':
