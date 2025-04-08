@@ -1,0 +1,169 @@
+/* App.css */
+
+
+.input-box{
+  margin-left: -10px;
+}
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #e1bee7);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-container {
+  background: transparent;
+  border-radius: 20px;
+  padding: 30px;
+  width: 400px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.title {
+  text-align: center;
+  font-size: 28px;
+  color: white;
+  margin-bottom: 20px;
+  margin-left: -5%;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-box {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ba68c8;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.input-box:focus {
+  border-color: #8e24aa;
+  box-shadow: 0 0 5px rgba(142, 36, 170, 0.3);
+}
+
+.suggestions-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 5px;
+  max-height: 150px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+
+.suggestion-item {
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.suggestion-item:hover {
+  background-color: #f3e5f5;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 15px;
+}
+
+.weather-button {
+  padding: 10px 18px;
+  border: none;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.weather-button:hover {
+  background-color: rgb(23 143 49 / 55%);
+}
+
+.clear-button {
+  background-color: transparent;
+  border: 1px solid white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  width: 30%;
+}
+
+.clear-button:hover {
+  background-color: rgb(255 16 16 / 44%);
+}
+
+.weather-card {
+  margin-top: 25px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 15px;
+  text-align: center;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.weather-icon {
+  width: 80px;
+  height: 80px;
+  animation: floatIcon 2s ease-in-out infinite;
+}
+
+@keyframes floatIcon {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.city-name {
+  font-size: 22px;
+  margin: 10px 0;
+  color: #512da8;
+}
+
+.weather-info {
+  margin: 6px 0;
+  font-size: 16px;
+  color: #333;
+}
